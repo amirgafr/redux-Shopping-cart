@@ -12,11 +12,11 @@ function Home() {
     dispatch(addToCart(e));
   }
   return (
-    <section className="bg-gray-50 mt-10 py-8 antialiased dark:bg-gray-900 md:py-12">
+    <section className="bg-gray-50 mt-10 py-8 antialiased  md:py-12">
       <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
         <div className="mb-4 items-end justify-between space-y-4 sm:flex sm:space-y-0 md:mb-8">
           <div>
-            <h2 className="mt-3 text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl">
+            <h2 className="mt-3 text-xl font-semibold text-gray-900  sm:text-2xl">
               Restaurant Open Now
             </h2>
           </div>
@@ -26,11 +26,11 @@ function Home() {
           {cartData.map((element, index) => {
             return (
               <>
-                <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+                <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm ">
                   <div className="h-56 w-full">
                     <a>
                       <img
-                        className="mx-auto h-full dark:hidden"
+                        className="mx-auto h-full"
                         src={element.imgdata}
                         alt=""
                       />
@@ -57,7 +57,7 @@ function Home() {
                         </svg>
                       </div>
 
-                      <p className="text-sm font-medium text-gray-900 dark:text-white">
+                      <p className="text-sm font-medium text-gray-900">
                         {element.rating}
                       </p>
                     </div>
@@ -65,7 +65,7 @@ function Home() {
                     <ul className="mt-2 flex items-center gap-4">
                       <li className="flex items-center gap-2">
                         <svg
-                          className="h-4 w-4 text-gray-500 dark:text-gray-400"
+                          className="h-4 w-4 text-gray-500 "
                           aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -79,14 +79,14 @@ function Home() {
                             d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
                           />
                         </svg>
-                        <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        <p className="text-sm font-medium text-gray-500">
                           Fast Delivery
                         </p>
                       </li>
 
                       <li className="flex items-center gap-2">
                         <svg
-                          className="h-4 w-4 text-gray-500 dark:text-gray-400"
+                          className="h-4 w-4 text-gray-500"
                           aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -99,20 +99,20 @@ function Home() {
                             d="M8 7V6c0-.6.4-1 1-1h11c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1h-1M3 18v-7c0-.6.4-1 1-1h11c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1H4a1 1 0 0 1-1-1Zm8-3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
                           />
                         </svg>
-                        <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        <p className="text-sm font-medium text-gray-500 ">
                           Best Price
                         </p>
                       </li>
                     </ul>
 
                     <div className="mt-4 flex items-center justify-between gap-4">
-                      <p className="text-2xl font-extrabold leading-tight text-gray-900 dark:text-white">
+                      <p className="text-2xl font-extrabold leading-tight text-gray-900">
                         ${element.price}
                       </p>
 
                       <button
                         type="button"
-                        className="inline-flex items-center rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                        className="inline-flex items-center rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4  focus:ring-primary-300"
                         onClick={() => send(element)}
                       >
                         <svg
