@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.p1[data-count]:after {
+  position: absolute;
+  right: 20%;
+  top: -40%;
+  content: attr(data-count);
+  font-size: 80%;
+  padding: 0.2em;
+  border-radius: 50%;
+  line-height: 1em;
+  color: white;
+  background-color: red;
+  text-align: center;
+  min-width: 18px;
+}
